@@ -7,10 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="myButton">Roll</button><br>
-    <label id="label1" class="myLabels"></label><br>
-    <label id="label2" class="myLabels"></label><br>
-    <label id="label3" class="myLabels"></label><br>
+    <label for="myCheckBox">Subscribe:</label>
+    <input type="checkbox" id="myCheckBox" name="card"><br>
+
+    <label for="visaBtn">Visa</label>
+    <input type="radio" id="visaBtn" name="card"><br>
+
+    <label for="masterCardBtn">Master Card</label>
+    <input type="radio" id="masterCardBtn" name="card"><br>
+    
+    <label for="payPalBtn">PayPal</label>
+    <input type="radio" id="payPalBtn" name="card"><br>
+
+
+    <button type="submit" id="mySubmit" class="myButton">Submit</button>
+    <button type="reset" id="myReset" class="myButton">Reset Selection</button>
+
+    <p id="subResult"></p>
+    <p id="paymentResult"></p>
 
     <script src="index.js"></script>
 </body>

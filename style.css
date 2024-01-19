@@ -4,12 +4,6 @@ body{
     text-align:center;
 }
 
-#myButton{
-    font-size: 3em;
-    padding: 5px 25px;
-    border-radius: 24px;
-}
-
-.myLabels{
-    font-size: 3em;
+.myButton{
+    font-size: 1em;
 }
