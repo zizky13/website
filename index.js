@@ -7,12 +7,12 @@ const countLabel = document.getElementById("countLabel");
 let count = 0;
 
 increaseBtn.onclick = increase = () => {
-    count++;
+    count = Math.floor((Math.random() * 100) + 1);
     countLabel.textContent = count;
 }
 
 decreaseBtn.onclick = decrease = () => {
-    count--;
+    count = Math.floor((Math.random() * -100) - 1);
     countLabel.textContent = count;
 }
 
