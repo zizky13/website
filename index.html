@@ -7,22 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="">
-        <h1>Temperature conversion:</h1>
-        <input type="number" id="textbox" value="0"><br>
-
-        <input type="radio" id="toFahrenheit" name="unit">
-        <label for="toFahrenheit">Celcius ➡️ Fahrenheit</label><br>
-
-        <input type="radio" id="toCelcius" name="unit">
-        <label for="toCelcius">Fahrenheit ➡️ Celcius</label><br>
-
-        <button type="button" onclick="convert()">Submit</button>
-        <p id="result">Select a unit</p>
-
-
-    </form>
-
+    <div id="container">
+        <h1>Dice Roller</h1>
+        <label># of Dice</label>
+        <input type="number" value="1" min="1" id="numOfDice">
+        <button onclick="rollDice()">Roll Dice</button>
+        <div id="diceResult"></div>
+        <div id="diceImages"></div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
