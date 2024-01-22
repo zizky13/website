@@ -1,20 +1,20 @@
-// RANDOM NUM GEN
+// spread operator = ... allows an iterable such as an
+//                   array or string to be expanded into
+//                   seperate elements (unpack the elements)
 
-const myButton = document.getElementById("myButton");
-const label1 = document.getElementById("label1");
-const label2 = document.getElementById("label2");
-const label3 = document.getElementById("label3");
-const min = 1;
-const max = 6;
-let randomNum1;
-let randomNum2;
-let randomNum3;
+let numbers = [1,2,3,4,5];
+let maximum = Math.max(...numbers);
+let minimum = Math.min(...numbers);
+let username = "Hokkaido"
+let letters = [...username].join("-");
+let fruits = ["apple","orange","banana"];
+ //shallow copy of fruits
+let vegetables = ["carrots","celery","potato"]
+let foods = [...fruits, ...vegetables,"eggs","milk"];
 
-myButton.onclick = clicked = () => {
-    randomNum1 = Math.floor(Math.random() * max) + min;
-    randomNum2 = Math.floor(Math.random() * max) + min;
-    randomNum3 = Math.floor(Math.random() * max) + min;
-    label1.textContent = randomNum1;
-    label2.textContent = randomNum2;
-    label3.textContent = randomNum3;
-}
+
+console.log(fruits);
+console.log(foods);
+console.log(letters);
+console.log(maximum);
+console.log(minimum);
